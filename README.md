@@ -1,7 +1,7 @@
 Before understanding the auto-commit we should know about the transcations in DBMS.
 
 **Transactions:**
-There are times when we do not want one statement to take effect before completing another one. Suppose a book from the library is issued to a student, we have to decrease the number of available books from a Books table and we have to increase the count of borrowed books of that student in the Student table. Then we have to insert a record in one another table in which we will mention book id, student id, and issued date. All of these records should be updated at the same time, otherwise, the data will be inconsistent. 
+There are times when we do not want one statement to take effect before completing another one. For better understanding I will explain it with and example. Suppose a book from the library is issued to a student, we have to decrease the number of available books from a Books table and we have to increase the count of borrowed books of that student in the Student table. Then we have to insert a record in one another table in which we will mention book id, student id, and issued date. All of these records should be updated at the same time, otherwise, the data will be inconsistent. 
 The way to be sure that either action occurs or neither action occurs is to use a transaction. The transaction is a set of one or more statements that are executed as a unit, so either all of the statements are executed, or none of the statements are executed.Transactions enable you to control if, and when, changes are applied to the database. It treats a single SQL statement or a group of SQL statements as one logical unit, and if any statement fails, the whole transaction fails.
 
 **What is auto-commit?**
